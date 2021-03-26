@@ -2,6 +2,8 @@ package io.cucumber.maria;
 
 import io.cucumber.java.pt.Então;
 
+import static org.junit.Assert.assertEquals;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,18 +26,26 @@ public class TorneseTestSteps {
         browser.get("https://www.torneseumprogramador.com.br/");
         browser.manage().window().maximize();
     }
-
+   
     @Dado("digito no campo de busca a palavra {string}")
     public void digito_no_campo_de_busca_a_palavra(String string) {
         WebElement input = browser.findElement( By.cssSelector(".form-pesquisa") );
         input.sendKeys(string);
     }
 
-    @Então("devo ver o resultado na busca")
-    public void devo_ver_o_resultado_na_busca() {
+    @Dado("clico no botão da lupa")
+    public void clico_no_botão_da_lupa() {
         WebElement button = browser.findElement( By.cssSelector(".btn-pesquisa") );
         button.click();
     }
+
+    @Então("devo ver o resultado na busca {string}")
+    public void devo_ver_o_resultado_na_busca(String string) {
+        WebElement message = browser.findElement( By.cssSelector(".div-col-h1") );
+        assertEquals(string, message.getText());
+    }
+
+
 
     
 }

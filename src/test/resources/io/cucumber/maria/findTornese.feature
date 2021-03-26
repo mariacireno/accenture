@@ -6,9 +6,11 @@ Funcionalidade: Testar site Tornese
     Cenário: Entrar no site do tornese um programador e buscar pelo conteúdo tdd
         Dado que que estou no site do tornese um programador
         E digito no campo de busca a palavra "tdd"
-        Então devo ver o resultado na busca
+        E clico no botão da lupa
+        Então devo ver o resultado na busca 'Busca pelo termo "tdd"'
 
     Cenário: Entrar no site do tornese um programador e buscar pelo conteúdo bdd
         Dado que que estou no site do tornese um programador
         E digito no campo de busca a palavra "bdd"
-        Então devo ver o resultado na busca
+        E clico no botão da lupa
+        Então devo ver o resultado na busca 'Busca pelo termo "bdd"'

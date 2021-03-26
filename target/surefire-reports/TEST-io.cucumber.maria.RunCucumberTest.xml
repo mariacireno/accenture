@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="io.cucumber.maria.RunCucumberTest" time="12.122" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="io.cucumber.maria.RunCucumberTest" time="11.649" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.10+9-Ubuntu-0ubuntu1.20.04"/>
@@ -60,6 +60,6 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="Testar site Tornese" name="Entrar no site do tornese um programador e buscar pelo conteúdo tdd" time="6.772"/>
-  <testcase classname="Testar site Tornese" name="Entrar no site do tornese um programador e buscar pelo conteúdo bdd" time="5.35"/>
+  <testcase classname="Testar site Tornese" name="Entrar no site do tornese um programador e buscar pelo conteúdo tdd" time="6.603"/>
+  <testcase classname="Testar site Tornese" name="Entrar no site do tornese um programador e buscar pelo conteúdo bdd" time="5.046"/>
 </testsuite>
